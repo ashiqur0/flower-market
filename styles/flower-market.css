@@ -13,11 +13,16 @@
 .displayflex {
     display: flex;
 }
+.color1 {
+    color: #E95A08;
+}
 
 /* nav related style */
 .nav {
     max-width: 1140px;
-    margin: 30px auto 120px auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 120px;
     justify-content: space-between;
     align-items: center;
 }
@@ -32,26 +37,59 @@ a {
     color: black;
 }
 .home {
+    position: relative;
     font-weight: 700;
     color: #252432;
 }
 .shop, .about {
+    position: relative;
     color: #8987A1;
 }
 .cart {
-    margin-left: 10px;
+    padding-right: 10px;
 }
 
 /* banner related styles */
-
-
+.banner_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 120px;
+}
+.banner {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;    
+}
+.banner_title {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Noto Serif", serif;
+}
+.banner_description {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.37rem;
+    font-family: 'Inter', sans-serif;
+}
 
 /* smaller devise responsive design */
 @media screen and (max-width: 576px) {
     .nav {
         margin: 15px 15px 30px 15px;
     }
+    .navlinks {
+        padding-left: 0px;
+        gap: 0px;
+    }
    .home, .shop, .about {
-    display: none;
+        display: none;
+   }
+   .banner {
+        flex-direction: column-reverse;
+   }
+   .banner_image img {
+        width: 100%;
    }
 }
