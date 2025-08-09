@@ -9,3 +9,49 @@
     "wdth" 100;
 }
 
+/* shared style */
+.displayflex {
+    display: flex;
+}
+
+/* nav related style */
+.nav {
+    max-width: 1140px;
+    margin: 30px auto 120px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks {
+    gap: 48px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.home {
+    font-weight: 700;
+    color: #252432;
+}
+.shop, .about {
+    color: #8987A1;
+}
+.cart {
+    margin-left: 10px;
+}
+
+/* banner related styles */
+
+
+
+/* smaller devise responsive design */
+@media screen and (max-width: 576px) {
+    .nav {
+        margin: 15px 15px 30px 15px;
+    }
+   .home, .shop, .about {
+    display: none;
+   }
+}
