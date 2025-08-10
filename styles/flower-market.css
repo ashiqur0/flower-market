@@ -285,6 +285,56 @@ a {
     margin-top: 5px;
 }
 
+/* subscription section related style */
+.subscription_image img {
+    width: 100%;
+    margin-top: 120px;
+}
+.subscription_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -370px;
+}
+.subscription_title {
+    font-family: "Noto Serif", serif;
+    font-size: 3.067rem;
+    font-weight: 700;
+    color: white;
+}
+.form {
+    display: flex;
+    align-items: center;
+    gap: -20px;
+}
+.email {
+    background-color: white;
+    border: none;
+    width: 644px;
+    height: 50px;
+    padding: 10px auto 15px 20px;
+}
+#button {
+    width: 186px;
+    height: 52px;
+    background-color: #E95A08;
+    border: none;
+    padding: 19px auto;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-left: -4px;
+}
+
+/* footer related style */
+.footer_section {
+    max-width: 1140px;
+    height: 300px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 /* smaller devise responsive design */
 @media screen and (max-width: 576px) {
@@ -374,4 +424,19 @@ a {
    .shop_now2 {
         font-size: 1rem;
    }
+
+   /* subscription section related style */
+   .subscription_title {
+        font-size: 1.25rem;
+        margin-top: -90px;
+    }
+    .email {
+        width: 218px;
+    }
+    #button {
+        width: 103px;
+    }
+    .subscription_container {
+        margin-top: -30px;
+    }
 }
