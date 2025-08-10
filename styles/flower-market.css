@@ -198,7 +198,6 @@ a {
 .latest_deal_section {
     max-width: 1140px;
     margin: 0 auto;
-    background-color: aqua;
 }
 .deal_content{
     margin-top: 133px;
@@ -235,12 +234,56 @@ a {
 .left_image {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 20px;
 }
 .right_image {
+    margin: 0 0 -4px 0;
+}
+.bloom, .ana, .zabo {
+    text-align: center;
+    width: 270px;
+    height: 91px;
+}
+.bloom {
+    margin-top: -140px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+.ana {
+    margin-top: -130px;
+    margin-bottom: 19px;
+    margin-left: 40px;    
+}
+.zabo {
+    width: 498px;
+    height: 50px;
+    margin-top: -250px;
+    margin-bottom: 200px;
+    margin-left: 115px;
+}
+.bloom_title, .ana_title, .zabo_title {
+    font-family: "Noto Serif", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
     margin: 0;
 }
-
+.zabo_title {
+    font-size: 2.5rem;
+}
+.shop_now, .shop_now2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+    padding: 26px 95.5px;
+}
+.shop_now2 {
+    font-size: 1.75rem;
+    margin-top: 5px;
+}
 
 
 /* smaller devise responsive design */
@@ -313,5 +356,21 @@ a {
    .left_image {
         flex-direction: column;
         gap: 20px;
+   }
+   .right_image  {
+        width: 100%;
+   }
+   .zabo {
+        margin-left: -90px;
+        margin-top: -110px;
+   }
+   .bloom, .ana {
+        margin-left: 20px;
+   }
+   .zabo_title {
+        font-size: 1.25rem;
+   }
+   .shop_now2 {
+        font-size: 1rem;
    }
 }
